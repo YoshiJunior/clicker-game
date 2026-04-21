@@ -1,6 +1,6 @@
 const STORAGE_KEY = "biscuit-bazaar-save-v5";
-const SECRET_PASSWORD = "remington";
-const SECRET_CPS_BONUS = 1_000_000_000;
+const SECRET_PASSWORD = "yoshisisgreat";
+const SECRET_CPS_BONUS = 1_000_000_000_000;
 
 const buildingDefs = [
   {
@@ -15,7 +15,7 @@ const buildingDefs = [
   {
     id: "grandma",
     name: "Grandma",
-    description: "The original biscuit legend. Still unstoppable.",
+    description: "The original remington legend. Still unstoppable.",
     baseCost: 50,
     growth: 1.18,
     cps: 0.5,
@@ -41,8 +41,8 @@ const buildingDefs = [
   },
   {
     id: "temple",
-    name: "Temple of Dough",
-    description: "A monument to excess, flour, and automation.",
+    name: "Temple of Remington",
+    description: "A monument to automation.",
     baseCost: 4000,
     growth: 1.25,
     cps: 32,
@@ -51,7 +51,7 @@ const buildingDefs = [
   {
     id: "moon",
     name: "Moon Oven",
-    description: "One small step for biscuits, one giant leap for the bakery.",
+    description: "One small step for Remingtons, one giant leap for the bakery.",
     baseCost: 18000,
     growth: 1.28,
     cps: 120,
@@ -60,7 +60,7 @@ const buildingDefs = [
   {
     id: "galaxy",
     name: "Galaxy Mill",
-    description: "A cosmic grinder that turns starlight into crumbs.",
+    description: "A cosmic grinder that turns starlight into Remingtons.",
     baseCost: 75000,
     growth: 1.3,
     cps: 480,
