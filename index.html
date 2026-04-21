@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biscuit Bazaar</title>
+    <meta
+      name="description"
+      content="A polished clicker game inspired by Cookie Clicker, ready for GitHub Pages."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-label">Remingtons</span>
+            <strong id="remingtons">0</strong>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Per click</span>
+            <strong id="perClick">1</strong>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Per second</span>
+            <strong id="perSecond">0</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="game-grid">
+        <div class="center-panel">
+          <button id="cookieButton" class="cookie-button" type="button" aria-label="Bake a biscuit">
+            <span class="cookie-core"></span>
+            <span class="cookie-chip chip-a"></span>
+            <span class="cookie-chip chip-b"></span>
+            <span class="cookie-chip chip-c"></span>
+            <span class="cookie-chip chip-d"></span>
+            <span class="cookie-chip chip-e"></span>
+            <span class="cookie-text">Bake</span>
+          </button>
+
+          <div class="toolbar">
+            <button id="saveButton" class="ghost-button" type="button">Save now</button>
+            <button id="resetButton" class="ghost-button danger" type="button">Reset</button>
+          </div>
+
+          <p class="hint">Tip: upgrades unlock in a chain. Keep baking to expand the bakery.</p>
+        </div>
+
+        <aside class="panel">
+          <div class="panel-head panel-head-tabs">
+            <div>
+              <h2 id="panelTitle">Shop</h2>
+              <p id="panelSubtitle">Buy producers to automate your bakery.</p>
+            </div>
+            <div class="tab-switcher" role="tablist" aria-label="Catalog tabs">
+              <button id="shopTab" class="tab-button" type="button" role="tab" aria-selected="true">Shop</button>
+              <button id="upgradeTab" class="tab-button" type="button" role="tab" aria-selected="false">Upgrades</button>
+            </div>
+          </div>
+          <div id="catalogScroll" class="catalog-scroll">
+            <div id="catalogList" class="shop-list" aria-live="polite"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="footer-bar">
+        <p id="saveStatus">Not saved yet.</p>
+        <p id="offlineBonus"></p>
+        <button id="secretButton" class="secret-button" type="button" aria-label="Secret access">?</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
