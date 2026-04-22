@@ -123,6 +123,7 @@ p {
   gap: 16px;
   position: sticky;
   top: 20px;
+  transform: scale(1.5)
 }
 
 .cookie-button {
@@ -139,7 +140,7 @@ p {
 }
 
 .cookie-button:hover {
-  transform: scale(1.02);
+  transform: scale(1.52);
 }
 
 .cookie-button:active {
